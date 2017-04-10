@@ -10,7 +10,7 @@ calculateAge = function(b_year) {
         console.log("You are either " + poss_age + " or " + poss_age2);
   
         
-        document.getElementById('task1').innerHTML = output
+        document.getElementById('task1').innerHTML = output;
 };
 
 function handleClick(event){
@@ -19,3 +19,14 @@ function handleClick(event){
           calculateAge(x)
                 return false;
             }
+
+
+calculateSupply = function (age,amount){
+  
+      var total_days = (90 * 365)- (parseInt(age) * 365); 
+      var total_amount =Number( total_days * (parseFloat(amount)).toFixed(0))
+      console.log(total_amount)
+      document.getElementById('task2').innerHTML = "You will need " + total_amount + " to reach the age 90.";
+}
+
+calculateSupply(25,3)
