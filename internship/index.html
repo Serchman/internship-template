@@ -31,18 +31,39 @@
       <div id=task1></div>
 
   <h2>Task 2</h2>
+  <form name="myform" onSubmit="return handleClick()">
+            
+            <input type="text" id="age" placeholder="Input Age">
+            <input type="text" id="amount" placeholder="Input amount per day">
+            <input name="Submit"  type="submit" value="Submit" >
+  </form>
     <div id=task2></div>
   
   <h2>Task 3 </h2>
   
   <form name="myform" onSubmit="return handleClick()">
-            <input name="Submit"  type="submit" value="Enter Radius" >
-            <input type="text" id="radius" placeholder="">
-  <div id=circum></div>
+            
+    <input type="text" id="radius" placeholder="Input Radius">
+    <input name="Submit"  type="submit" value="Submit" >
+  </form>
+    <div id=circum></div>
   <div id=area></div>
     
     <h2>Task 4</h2>
+    <form name="myform" onSubmit="return handleClick()">
+            
+      <input type="text" id="faren2" placeholder="Input Celcius">
+      <input name="Submit"  type="submit" value="Convert to F" >
+  </form>
     <div id=faren></div>
+  
+  
+  <form name="myform" onSubmit="return handleClick()">
+            
+    <input type="text" id="celc2" placeholder="Input Fahrenheit">
+    <input name="Submit"  type="submit" value="Convert to C" >
+  </form>
+  
     <div id=celc></div>
 </body>
 <script type="text/javascript" src="tasks.js"></script>
