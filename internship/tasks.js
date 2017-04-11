@@ -6,19 +6,12 @@ calculateAge = function(b_year) {
         var poss_age2 = parseInt(poss_age) -1
         console.log(year)
         
-        var output = "You are either " + poss_age2 + " or " + poss_age + "."
+        var poss_ages = "You are either " + poss_age2 + " or " + poss_age + "."
         console.log("You are either " + poss_age + " or " + poss_age2);
   
         
-        document.getElementById('task1').innerHTML = output;
+        document.getElementById('task1').innerHTML = poss_ages;
 };
-
-function handleClick(event){
-                var x = document.getElementById("myVal1").value;
-	    	console.log(x)
-          calculateAge(x)
-                return false;
-            }
 
 
 calculateSupply = function (age,amount){
@@ -49,15 +42,6 @@ calcArea = function(radius){
   
 }
 
-//calcArea(4)
-
-function handleClick(event){
-                var x = document.getElementById("radius").value;
-	    	//console.log(x)
-          calcCircumference(x)
-          calcArea(x)
-                return false;
-            }
 
 
 
@@ -68,9 +52,6 @@ celsiusToFahrenheit = function(celcius){
   document.getElementById('faren').innerHTML = C + String.fromCharCode(176) + "C is " + F + String.fromCharCode(176) + "F."
 }
 
-celsiusToFahrenheit(0)
-
-
 fahrenheitToCelsius = function(fahrenheit){
   
   var F = parseInt(fahrenheit)
@@ -78,4 +59,24 @@ fahrenheitToCelsius = function(fahrenheit){
   document.getElementById('celc').innerHTML = F + String.fromCharCode(176) + "F is " + C + String.fromCharCode(176) + "C."
 }
 
-fahrenheitToCelsius(100)
+function handleClick(event){
+  var x = document.getElementById("myVal1").value;
+  calculateAge(x)
+  
+  var age = document.getElementById('age').value;
+  var amount = document.getElementById('amount').value;
+  calculateSupply(age,amount)
+  
+  var R = document.getElementById('radius').value;
+  calcCircumference(R)
+  calcArea(R)
+  
+  
+  var f2 = document.getElementById('faren2').value;
+  celsiusToFahrenheit(f2)
+  
+  var c2 = document.getElementById("celc2").value;
+  fahrenheitToCelsius(c2)
+          
+                return false;
+            }
