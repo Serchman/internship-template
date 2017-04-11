@@ -53,7 +53,7 @@ calcArea = function(radius){
 
 function handleClick(event){
                 var x = document.getElementById("radius").value;
-	    	console.log(x)
+	    	//console.log(x)
           calcCircumference(x)
           calcArea(x)
                 return false;
