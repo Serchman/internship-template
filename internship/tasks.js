@@ -47,14 +47,14 @@ calcArea = function(radius){
 
 celsiusToFahrenheit = function(celcius){
   
-  var C = parseInt(celcius)
+  var C = parseFloat(celcius)
   var F = (C *9) / 5 + 32
   document.getElementById('faren').innerHTML = C + String.fromCharCode(176) + "C is " + F + String.fromCharCode(176) + "F."
 }
 
 fahrenheitToCelsius = function(fahrenheit){
   
-  var F = parseInt(fahrenheit)
+  var F = parseFloat(fahrenheit)
   var C = ((F - 32) * 5) /9
   document.getElementById('celc').innerHTML = F + String.fromCharCode(176) + "F is " + C + String.fromCharCode(176) + "C."
 }
